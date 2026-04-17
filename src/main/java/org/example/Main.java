@@ -43,7 +43,7 @@ public class Main {
             if(userInput == 1) {
                     System.out.println("\n=== AVAILABLE BOOKS ===");
                     for (Book book : books) {
-                        if (!book.isCheckedOut()) {
+                        if (book.isCheckedOut() == false) {
                             System.out.println(book.getId() + ". " + book.getTitle() + " (" + book.getIsbn() + ")");
                         }
                     }
@@ -68,7 +68,7 @@ public class Main {
                                     available = true;
                                 }
                             }
-                            if(!available){
+                            if(available = false){
                                 System.out.println("ERROR: Invalid Book ID");
                                 break;
                             }
