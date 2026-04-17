@@ -80,6 +80,7 @@ public class Main {
                         }
                     }
             }
+
             else if(userInput == 2){
                 System.out.println("\n=== CHECKED OUT BOOKS ===");
                 for (Book book: books){
@@ -94,6 +95,7 @@ public class Main {
             System.out.println("Goodbye!");
             break;
             }
+
             else{
                 System.out.println("ERROR: Invalid Option In Menu");
             }
