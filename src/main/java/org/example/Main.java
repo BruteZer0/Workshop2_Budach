@@ -1,17 +1,40 @@
 package org.example;
 
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //You will only need ONE scanner
+        Scanner scanner = new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        // Create 20 Book objects manually in an array
+        //Or have ChatGPT help you
+
+        //This while loop runs forever
+        //That means the program will run until we tell it to stop.
+        while (true) {
+            //Show a menu to the user
+            //Use the scanner to take in the user input
+            //For example
+            System.out.println("\n=== BOOK STORE HOME SCREEN ===");
+            System.out.println("1. Show Available Books");
+            System.out.println("2. Show Checked Out Books");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
+
+            int userInput = scanner.nextInt();
+
+            //Now use if statements depending on what the person typed
+            //How many possibilities are there? Write your if statement structure first
+
+            //Loop through your array of books and use if statements
+            //Do we show all books? Only checked-in books?
+
+            //How do we exit the program?
+            //This command kills the program at whatever point its at.
+            System.exit(0);
         }
     }
 }
